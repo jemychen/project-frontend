@@ -1,38 +1,180 @@
-.App {
+.flex{
+  /* display: flex;
+  float: left */
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.space{
+  margin: 4px;
+}
+
+ul.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#1c0083;
+}
+
+ul.navBar li {
+  float: left;
+}
+
+ul.navBar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+}
+
+ul.navBar li a:hover {
+  background-color: rgb(56, 56, 56);
+}
+
+/* form */
+
+
+.form-container {
+  margin: 1rem auto;
+  max-width: 500px;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 0px 8px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container{
+  border-radius: 65px;
+
+}
+
+.form-container form label {
+  font-size: 1rem;
+
+}
+
+.form-btn{
+  width: 100px;
+  height: 25px;
+  margin-left: 200px;
+  border-radius: 65px;
+
+}
+
+.form-container form input{
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0.25rem;
+  font-weight: bold;
+  border: none;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 2px;
+  border-radius: 65px;
+
+}
+
+/* sideBar */
+
+ul.sideBar li a {
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  color: black;
+
+}
+
+
+ul.sideBar {
+  list-style-type: none;
+  margin-right: 100px;
+  padding: 0;
+  display: block;
+  border-radius: 0px 0px 16px 16px;
+
+}
+
+
+
+.button{
+  /* background-color: gray; */
+  font-size: small;
+}
+
+
+.formName{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.priceColor{
+  color: gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.imgItem{
+  width: 100px;
+  height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .placeOrder{
+  font-size: large;
+  margin-left: 400px;
+} */
+
+.deleteItem{
+  margin-left: 200px;
+  background-color: gray;
 }
 
-.App-link {
-  color: #61dafb;
+.orderbtn{
+  width: 100px;
+  height: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.qty{
+  width: 25px;
+  height: 25px;
+}
+
+.input{
+  margin-top: 19px;
+  border-radius: 70px;
+  height: 20px;
+}
+
+.card-game {
+  width: 150px;
+  height: 150px;
+}
+
+.gameName {
+  position: relative;
+  font-size: 8;
+}
+
+.game-card{
+  border: 2px solid rgb(82, 82, 82);
+  column-gap: 40px;
+  border-radius: 5px;
+  border-color: black;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.021);
+  overflow: hidden;
+  position: relative;
+  /* width: 400px;
+  height: 400px; */
+  margin-right: -50%;
+  margin: 10px auto;
+  /* background: #250A1C; */
+  text-align: center;
+  font-size: 12px;
+  font-family: 'averta', sans-serif;
 }
